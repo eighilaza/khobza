@@ -1,7 +1,5 @@
 import httplib
-c = httplib.HTTPConnection('www.google.com')
-c.request("HEAD", '')
-if c.getresponse().status == 200:
-   print('web site exists')
-else: 
-   print('cannot reach web site')
+conn = httplib.HTTPConnection("www.kimsufi.com")
+conn.request("HEAD", "/")
+r1 = conn.getresponse()
+print r1.status, r1.reason
