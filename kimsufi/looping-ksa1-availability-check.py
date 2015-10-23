@@ -37,4 +37,4 @@ for server_dic in availability_list:
 								print "Indisponible"
 
 if sendEmail == True:
-	subprocess.call(["/home/ighi/Kimsufi/send-email.sh"])
+	subprocess.call(["$HOME/kimsufi/send-email.sh"])
